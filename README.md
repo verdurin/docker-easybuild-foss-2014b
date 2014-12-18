@@ -7,3 +7,12 @@ This is a pretty simple Dockerfile but generates a pretty big image with all of 
 
 The definition for foss-2014b can be found here: 
 https://github.com/hpcugent/easybuild-easyconfigs/blob/master/easybuild/easyconfigs/f/foss/foss-2014b.eb
+
+
+Getting Started
+===============
+
+Assuming you have docker running you can run a bash shell in the container by running:
+
+# docker run -ti rjeschmi/easybuild-foss-2014b /bin/bash
+
