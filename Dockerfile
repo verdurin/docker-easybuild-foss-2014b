@@ -1,4 +1,4 @@
-FROM rjeschmi/easybuild:develop
+FROM rjeschmi/easybuild-centos6
 
 RUN yum -y install libibverbs-devel which tar bzip2
 
