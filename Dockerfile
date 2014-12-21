@@ -9,10 +9,8 @@ RUN su -l -c 'eb foss-2014b.eb --prefix=/software/easybuild --robot' - build
 
 ADD build/config.cfg /software/config/config.cfg
 ADD build/z99_StdEnv.sh  /etc/profile.d/z99_StdEnv.sh
-RUN mkdir -p /export/easybuild
-RUN useradd -u 1000 easybuild
-RUN chown -R easybuild.easybuild /export
 
+USER easybuild
 WORKDIR /export/easybuild
 
 VOLUME /export/easybuild
