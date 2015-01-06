@@ -14,7 +14,7 @@ Getting Started
 
 Assuming you have docker running you can run a bash shell in the container by running:
 
-```sh
+```
 $ docker run -ti rjeschmi/easybuild-foss-2014b /bin/bash
 [root@f880badc5ab2 Lmod-5.8]# su - build
 [root@f880badc5ab2 Lmod-5.8]# eb <EasyConfig.eb>
