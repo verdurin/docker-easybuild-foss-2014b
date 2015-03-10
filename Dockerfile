@@ -6,6 +6,8 @@ RUN yum -y install libibverbs-devel which tar bzip2
 ADD ./sources /build/sources
 
 RUN rsync -av /build/sources/./ /software/easybuild/sources
+
+RUN chown -R build /software/easybuild
 RUN su -l -c 'eb foss-2015a.eb --prefix=/software/easybuild --robot' - build
 
 
