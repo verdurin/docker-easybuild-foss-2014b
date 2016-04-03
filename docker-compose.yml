@@ -1,4 +1,4 @@
 easybuild:
-    image: rjeschmi/easybuild-foss-2014b
+    image: verdurin/easybuild-foss-2015b
     volumes:
         - ./export:/export/easybuild

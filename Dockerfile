@@ -8,7 +8,7 @@ ADD ./sources /build/sources
 RUN rsync -av /build/sources/./ /software/easybuild/sources
 
 RUN chown -R build /software/easybuild
-RUN su -l -c 'eb foss-2015a.eb --prefix=/software/easybuild --robot' - build
+RUN su -l -c 'eb foss-2015b.eb --prefix=/software/easybuild --robot' - build
 
 
 # Setting the environment to build all new tools into /export/easybuild for easier exporting
