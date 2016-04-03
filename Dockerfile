@@ -1,7 +1,7 @@
-FROM rjeschmi/easybuild-centos6
+FROM rjeschmi/easybuild-centos7
 
 USER root
-RUN yum -y install libibverbs-devel which tar bzip2 python-setuptools
+RUN yum -y install libibverbs-devel which tar bzip2 
 
 ADD ./sources /build/sources
 
